@@ -37,7 +37,7 @@
                          @guest
                         @else
                             <li><a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a></li>
-                            <li><a class="nav-link" href="">{{ __('Tournaments') }}</a></li>
+                            <li><a class="nav-link" href="/tournaments">{{ __('Tournaments') }}</a></li>
                         @endguest
                     </ul>
 
