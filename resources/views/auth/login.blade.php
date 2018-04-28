@@ -61,8 +61,15 @@
                             </div>
                         </div>
                     </form>
+                </div> 
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/login/google" class="btn btn-lg waves-effect waves-light btn-block google">Google+</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a href="/login/github" class="btn btn-lg waves-effect waves-light btn-block github">GitHub</a>
+                    </div>
                 </div>
-                <a href="/login/github"  class="btn btn-default btn-md">Log in with Github</a>
             </div>
         </div>
     </div>

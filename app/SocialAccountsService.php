@@ -3,7 +3,7 @@ namespace App;
 
 use Laravel\Socialite\Contracts\User as ProviderUser;
 
-class SocialAccountService
+class SocialAccountsService
 {
     public function findOrCreate(ProviderUser $providerUser, $provider)
     {
