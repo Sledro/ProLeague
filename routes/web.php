@@ -23,3 +23,5 @@ Route::get('/tournaments', 'TournamentController@index');
 
 Route::get('login/{provider}', 'Auth\SocialAccountController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\SocialAccountController@handleProviderCallback');
+
+Route::get('/user/{username}', 'UserController@index');

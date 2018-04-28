@@ -7,6 +7,24 @@
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
+                <div class="row" style="padding:20px;">
+                    <div class="col-md-4 col-sm-12">
+                        <a href="/login/google" class="btn btn-danger btn-block">
+                            <span class="fa fa-google"></span> Google 
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <a href="/login/twitter" class="btn btn-info btn-block">
+                            <span class="fa fa-twitter"></span> Twitter 
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <a href="/login/facebook" class="btn btn-primary btn-block">
+                            <span class="fa fa-facebook"></span> Facebook 
+                        </a>
+                    </div>
+                </div>
+
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -62,14 +80,6 @@
                         </div>
                     </form>
                 </div> 
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <a href="/login/google" class="btn btn-lg waves-effect waves-light btn-block google">Google+</a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <a href="/login/github" class="btn btn-lg waves-effect waves-light btn-block github">GitHub</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
