@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -13,7 +13,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('user.profile');
+        //
     }
 
     /**
@@ -43,9 +43,17 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($username)
     {
-        //
+        $user = User::whereUsername($username)->first();
+        if($user){
+            $pt = User::find($user->trainerID);
+        }
+        if($user){
+            return view('user.index')->withUser($user);
+        }else{
+           return false;
+        }
     }
 
     /**

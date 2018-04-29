@@ -4,7 +4,8 @@
     border-radius: 6px;
     height: 230px;
     max-width: 340px;
-    width: 290px;
+    width: 365px;
+    float:left;
 }
 .twPc-bg {
     background-image: url("https://pbs.twimg.com/profile_banners/50988711/1384539792/600x200");
